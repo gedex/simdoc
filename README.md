@@ -20,5 +20,5 @@ TODO: Remove these dependencies.
 ## Install
 
 ```
-go get github.com/gedex/
+go get github.com/gedex/simdoc
 ```
