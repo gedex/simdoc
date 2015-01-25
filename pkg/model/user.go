@@ -1,7 +1,7 @@
 package model
 
 type User struct {
-	ID       int64  `meddler:"id,pk"    json:"-"`
+	ID       int64  `meddler:"id,pk"    json:"user_id"`
 	Login    string `meddler:"login"    validate:"login" json:"login"`
 	Email    string `meddler:"email"    validate:"email" json:"email"`
 	Password string `meddler:"password" validate:"min=6" json:"-"`

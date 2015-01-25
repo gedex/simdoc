@@ -12,7 +12,7 @@ import (
 func OptionsRequestHeaderInjector(c *web.C, h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == "OPTIONS" {
-			h := []string{"Authorization"}
+			h := []string{"Authorization", "Content-Type"}
 
 			if strings.HasPrefix(r.URL.Path, "/api/documents") {
 				h = append(h, "Content-Range")
